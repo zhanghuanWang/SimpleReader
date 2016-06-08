@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.ywg.simplereader"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    maven { url "https://jitpack.io" }
+    flatDir{
+        dirs 'libs' //就是你放aar的目录地址
+    }
+}
+
+dependencies {
+    compile 'cz.msebera.android:httpclient:4.3.6'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:recyclerview-v7:23.1.1'
+    compile 'com.android.support:cardview-v7:23.1.1'
+    compile 'com.android.support:support-v4:23.1.1'
+    compile files('libs/universal-image-loader-1.9.5.jar')
+    compile files('libs/android-async-http-1.4.9.jar')
+    compile files('libs/glide-3.7.0.jar')
+    compile files('libs/gson-2.3.jar')
+    compile project(':labeller')
+    /*compile 'me.relex:circleindicator:1.2.0@aar'*/
+    compile name: 'SMSSDK-2.0.2', ext: 'aar'
+    compile project(':circleindicator')
+    compile project(':zxing')
+    compile files('libs/photoview-1.2.2.jar')
+    compile 'junit:junit:4.12'
+    compile files('libs/okhttputils-2.4.1.jar')
+    compile files('libs/okio-1.6.0.jar')
+    compile files('libs/okhttp-3.1.2.jar')
+}

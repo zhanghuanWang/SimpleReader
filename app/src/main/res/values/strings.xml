@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">简读</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navigation_view">NavigationViewActivity</string>
+    <string name="nav_home">首页</string>
+    <string name="nav_concern">关注</string>
+    <string name="nav_found">发现</string>
+    <string name="nav_setting">设置</string>
+    <string name="nav_about">关于</string>
+    <string name="nav_exit_app">退出应用</string>
+    <string name="nav_night_mode">夜间模式</string>
+    <string name="nav_scan">扫一扫</string>
+    <string name="menu_open">打开</string>
+
+    <string name="menu_close">关闭</string>
+    <string name="title_activity_card_view">CardViewActivity</string>
+    <string name="title_activity_tab_layout">TabLayoutActivity</string>
+    <string name="title_activity_coordinator_layout">CoordinatorLayoutActivity</string>
+    <string name="title_activity_material_design_demo">MaterialDesignDemo</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_item_detail">ItemDetailActivity</string>
+    <string name="title_activity_demo">DemoActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_news_comment">NewsCommentActivity</string>
+    <string name="title_activity_demo1">Demo1Activity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_column_choose">ColumnChooseActivity</string>
+
+    <string name="action_screen_capture">截屏分享</string>
+    <string name="action_font_size">字体大小</string>
+    <string name="action_share">分享</string>
+    <string name="action_share_direct">直接分享</string>
+    <string name="action_night_mode">夜间模式</string>
+    <string name="github_url">Github:https://github.com/ywg228</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+
+    <string name="action_scan">扫一扫</string>
+    <string name="btn_register">注册</string>
+    <string name="btn_login">登录</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_get_verification_code">获取验证码</string>
+
+    <string name="hint_phone">手机号</string>
+    <string name="hint_pwd">密码</string>
+    <string name="hint_name">姓名</string>
+    <string name="hint_image_code">输入图片验证码</string>
+
+    <string name="head_image">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="nick_name_edit">昵称修改</string>
+    <string name="pwd">密码</string>
+    <string name="pwd_edit">密码修改</string>
+    <string name="profile">个人信息</string>
+    <string name="set_headimage">设置头像</string>
+
+    <string name="logout">退出登录</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="user_nick_name">爱音乐的孩纸</string>
+
+    <string name="soft_update_title">有新版本更新</string>
+    <string name="soft_update_now">立即更新</string>
+    <string name="soft_update_later">忽略</string>
+
+    <string name="font_size">字体大小</string>
+</resources>

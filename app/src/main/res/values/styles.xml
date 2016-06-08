@@ -1,0 +1,44 @@
+<resources>
+
+    <!--Theme.AppCompat.Light.DarkActionBar-->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--列表分割线颜色-->
+        <item name="android:listDivider">@color/nav_menu_divider</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MyToolbarTextStyle" parent="@android:style/TextAppearance.DeviceDefault">
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Popupwindow">
+        <item name="android:windowEnterAnimation">@anim/pop_in_from_top</item>
+        <item name="android:windowExitAnimation">@anim/pop_out_to_top</item>
+    </style>
+
+    <style name="SwipeBackLayout">
+
+    <item name="edge_size">50dip</item>
+
+    <item name="shadow_left">@drawable/shadow_left</item>
+
+    <item name="shadow_right">@drawable/shadow_right</item>
+
+    <item name="shadow_bottom">@drawable/shadow_bottom</item>
+
+</style>
+
+</resources>

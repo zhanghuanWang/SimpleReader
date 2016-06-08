@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00A59A</color>
+    <color name="colorPrimaryDark">#222222</color>
+    <color name="colorAccent">#00A59A</color>
+    <color name="item_bg_color_dark">#333333</color>
+    <color name="item_bg_color_light">#FFFFFF</color>
+    <color name="item_title_color_light">#181818</color>
+    <color name="item_title_color_dark">#999999</color>
+    <color name="item_title_color_light_clicked">#999999</color>
+    <color name="item_title_color_dark_clicked">#666666</color>
+
+    <color name="item_des_color_light">#999999</color>
+    <color name="item_des_color_dark">#5B5B5B</color>
+    <color name="recyclerview_bg_color_dark">#202020</color>
+    <color name="recyclerview_bg_color_light">#F0F0F0</color>
+    <color name="tab_title_unselected">#999999</color>
+    <color name="tab_title_unselected_dark">#5B5B5B</color>
+    <color name="tab_title_selected">#00A59A</color>
+    <color name="tab_bg_light">#FFFFFF</color>
+    <color name="tab_bg_dark">#222222</color>
+    <color name="nav_menu_divider">#E3E3E3</color>
+
+    <color name="btn_expand_pressed_bgcolor">#CCCCCC</color>
+
+    <color name="news_detail_bottom_bgcolor">#F4F4F4</color>
+
+    <color name="news_comment_item_bgcolor">#F6F6F6</color>
+
+    <color name="news_commment_divider">#E7E7E7</color>
+</resources>

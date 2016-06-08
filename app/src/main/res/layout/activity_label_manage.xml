@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="长按并拖动可调整顺序 点击可取消"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="长按并拖动可调整顺序 点击可取消"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/btn_up_close"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_expand_bgcolor"
+                android:src="@mipmap/ic_up_close" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="45dp"
+                android:layout_height="35dp"
+                android:background="@drawable/btn_expand_bgcolor"
+                android:text="确定"
+                android:textColor="@android:color/holo_red_light"
+                android:visibility="gone" />
+        </LinearLayout>-->
+
+        <com.ywg.simplereader.view.draggridview.DynamicGridView
+            android:id="@+id/dynamic_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:padding="10dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#FAFAFA"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="频道推荐"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <com.ywg.simplereader.view.draggridview.DynamicGridView
+            android:id="@+id/dynamic_grid1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:horizontalSpacing="5dp"
+            android:numColumns="3"
+            android:padding="10dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="10dp" />
+
+    </ScrollView>
+
+</LinearLayout>

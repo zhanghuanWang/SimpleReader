@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="1dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <!--
+                    layout_scrollFlags有以下几种值:
+                        scroll - 想滚动就必须设置这个。
+                        enterAlways - 实现quick return效果, 当向下移动时，立即显示View（比如Toolbar)。
+                        exitUntilCollapsed - 向上滚动时收缩View，但可以固定Toolbar一直在上面。
+                        enterAlwaysCollapsed - 当你的View已经设置minHeight属性又使用此标志时，你的View只能以最小高度进入，只有当滚动视图到达顶部时才扩大到完整高度。
+                        snap - 当滚动结束时，如果View只有部分可见，它将会自动滑动到最近的边界（完全可见或完全隐藏）
+                    其中还设置了一些属性，简要说明一下：
+                        contentScrim - 设置当完全CollapsingToolbarLayout折叠(收缩)后的背景颜色。
+                        expandedTitleMarginStart - 设置扩张时候(还没有收缩时)title向左填充的距离。
+                        expandedTitleMarginEnd
+                -->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleTextAppearance="@style/MyToolbarTextStyle"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="20dp"
+            app:expandedTitleTextAppearance="@style/MyToolbarTextStyle"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <!--
+            layout_collapseMode(折叠模式) - 有两个值:
+                pin -  设置为这个模式时，当CollapsingToolbarLayout完全收缩后，Toolbar还可以保留在屏幕上。
+                parallax - 设置为这个模式时，在内容滚动时，CollapsingToolbarLayout中的View（比如ImageView)也可以同时滚动，实现视差滚动效果.通常和layout_collapseParallaxMultiplier(设置视差因子)搭配使用。
+            layout_collapseParallaxMultiplier(视差因子) - 设置视差滚动因子，值为：0~1。
+            -->
+            <ImageView
+                android:id="@+id/iv_header_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.5" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <WebView
+                android:id="@+id/web_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_comment"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:borderWidth="0dp"
+        app:elevation="3dp"
+        app:pressedTranslationZ="12dp"
+        android:alpha="0.8"
+        app:layout_behavior="com.ywg.simplereader.view.QuickReturnFooterBehavior"/>
+
+   <!-- <include layout="@layout/news_detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_behavior="com.ywg.androidmaterialdesigndemo.view.QuickReturnFooterBehavior"/>-->
+
+    <FrameLayout
+        android:id="@+id/layout_reload"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:visibility="invisible">
+
+        <Button
+            android:id="@+id/btn_reload"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:drawableTop="@mipmap/ic_refresh"
+            android:gravity="center"
+            android:text="点击重新加载"
+            android:textColor="@color/item_des_color_light"
+            android:textSize="18sp" />
+
+      <!-- <Button
+            android:id="@+id/btn_set_network"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置网络"
+           android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/transparent" />-->
+    </FrameLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</android.support.design.widget.CoordinatorLayout>

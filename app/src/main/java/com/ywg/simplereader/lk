@@ -1,0 +1,88 @@
+{
+    "date": "20151202",
+    "stories": [
+        {
+            "images": [
+                "http://pic2.zhimg.com/5de633bc8fe2b7c081ecc44c89cb2991.jpg"
+            ],
+            "type": 0,
+            "id": 7517711,
+            "ga_prefix": "120208",
+            "title": "娘娘的新剧都看了吗？字儿都会认了吗？"
+        },
+        {
+            "images": [
+                "http://pic3.zhimg.com/dd60deb07b36f188e7d707b6816707d2.jpg"
+            ],
+            "type": 0,
+            "id": 7530689,
+            "ga_prefix": "120207",
+            "title": "人民币加入了 SDR，但还不能说成了「世界货币」"
+        },
+        {
+            "images": [
+                "http://pic3.zhimg.com/a2011c42103e857326a242022e1e7fa2.jpg"
+            ],
+            "type": 0,
+            "id": 7528454,
+            "ga_prefix": "120207",
+            "title": "现在大学生真会玩：我把宿舍装修成了上古卷轴的风格"
+        },
+        {
+            "title": "12306 双向核验的三种方法，我都研究明白了",
+            "ga_prefix": "120207",
+            "images": [
+                "http://pic3.zhimg.com/f9d50990530ed9aee6960ce0296764c2.jpg"
+            ],
+            "multipic": true,
+            "type": 0,
+            "id": 7529973
+        },
+        {
+            "images": [
+                "http://pic1.zhimg.com/af0e2296548e712b59f62d99b894fec4.jpg"
+            ],
+            "type": 0,
+            "id": 7528191,
+            "ga_prefix": "120206",
+            "title": "瞎扯 · 如何正确地吐槽"
+        }
+    ],
+    "top_stories": [
+        {
+            "image": "http://pic1.zhimg.com/7630c0196cf31aa5f52300c7a3cbdd84.jpg",
+            "type": 0,
+            "id": 7529973,
+            "ga_prefix": "120207",
+            "title": "12306 双向核验的三种方法，我都研究明白了"
+        },
+        {
+            "image": "http://pic3.zhimg.com/183d74c1902e68d03a9f80b751f62802.jpg",
+            "type": 0,
+            "id": 7517711,
+            "ga_prefix": "120208",
+            "title": "娘娘的新剧都看了吗？字儿都会认了吗？"
+        },
+        {
+            "image": "http://pic4.zhimg.com/fd5fddf4c43345d34d42511f125bf413.jpg",
+            "type": 0,
+            "id": 7530689,
+            "ga_prefix": "120207",
+            "title": "人民币加入了 SDR，但还不能说成了「世界货币」"
+        },
+        {
+            "image": "http://pic3.zhimg.com/a1cc7be73b36f310f82581486a40994e.jpg",
+            "type": 0,
+            "id": 7481476,
+            "ga_prefix": "120121",
+            "title": "都追过的 ·《火影忍者》里细思恐极的情节"
+        },
+        {
+            "image": "http://pic2.zhimg.com/1fe16f33f1f52039c5e145a22a00823d.jpg",
+            "type": 0,
+            "id": 7527682,
+            "ga_prefix": "120118",
+            "title": "「艾滋夫妇」生下健康宝宝已不再是奇迹"
+        }
+    ]
+}

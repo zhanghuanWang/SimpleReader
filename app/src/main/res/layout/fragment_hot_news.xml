@@ -1,0 +1,85 @@
+
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:scrollbars="vertical" />
+
+        <!-- TODO: Update blank fragment layout -->
+        <com.ywg.simplereader.view.RecyclerViewHeader
+            android:id="@+id/recycler_view_header"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal|top">
+
+            <!--<ImageView
+                android:id="@+id/iv_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/mm" />-->
+
+            <!--<com.ywg.androidmaterialdesigndemo.custom.FlashView
+                android:id="@+id/flash_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:effect="cube" />-->
+
+            <com.ywg.simplereader.view.Kanner
+                android:id="@+id/kanner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.ywg.simplereader.view.RecyclerViewHeader>
+
+
+       <!-- <FrameLayout
+            android:id="@+id/layout_reload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btn_reload"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:drawableTop="@mipmap/ic_refresh"
+                android:gravity="center"
+                android:text="点击重新加载"
+                android:textColor="@color/item_des_color_light"
+                android:textSize="18sp" />
+
+        </FrameLayout>-->
+        <!-- <ImageView
+             android:id="@+id/iv_image"
+             android:layout_width="match_parent"
+             android:layout_height="250dp"
+             android:src="@mipmap/mm"
+             android:fitsSystemWindows="true"
+             android:layout_alignParentTop="true"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="visible"/>
+
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

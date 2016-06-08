@@ -1,0 +1,4 @@
+include ':app', ':labeller', ':circleindicator', ':zxing'
+project(':labeller').projectDir = new File('extra/labeller')
+project(':circleindicator').projectDir = new File('extra/circleindicator')
+project(':zxing').projectDir = new File('extra/zxing')

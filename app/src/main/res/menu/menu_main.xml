@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.RecyclerViewActivity">
+    <item
+        android:id="@+id/add_data"
+        android:orderInCategory="100"
+        android:title="添加数据"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delete_data"
+        android:orderInCategory="100"
+        android:title="删除数据"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/linear_layoutanager"
+        android:orderInCategory="100"
+        android:title="LinearLayoutanager"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/grid_layoutManager"
+        android:orderInCategory="100"
+        android:title="GridLayoutManager"
+        app:showAsAction="never" />
+
+
+
+</menu>

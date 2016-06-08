@@ -1,0 +1,63 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:scrollbars="vertical" />
+
+        <!-- TODO: Update blank fragment layout -->
+        <com.ywg.simplereader.view.RecyclerViewHeader
+            android:id="@+id/recycler_view_header"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal|top">
+
+            <ImageView
+                android:id="@+id/iv_header_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_theme_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:text="了解自己和别人，了解彼此的欲望和局限"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </com.ywg.simplereader.view.RecyclerViewHeader>
+
+
+        <!-- <ImageView
+             android:id="@+id/iv_image"
+             android:layout_width="match_parent"
+             android:layout_height="250dp"
+             android:src="@mipmap/mm"
+             android:fitsSystemWindows="true"
+             android:layout_alignParentTop="true"
+             app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+
+        <!--ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="visible"/>-->
+
+    </FrameLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

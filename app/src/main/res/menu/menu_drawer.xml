@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_item_home"
+            android:icon="@mipmap/nav_home"
+            android:title="@string/nav_home"
+            android:checked="true"/>
+        <item android:id="@+id/nav_item_found"
+            android:icon="@mipmap/nav_found"
+            android:title="@string/nav_found"/>
+        <item android:id="@+id/nav_item_concern"
+            android:icon="@mipmap/nav_concern"
+            android:title="@string/nav_concern"/>
+        <!--<item
+            android:id="@+id/section1"
+            android:title="分组1">
+            <menu>
+                <item android:id="@+id/nav_item_found"
+                    android:icon="@mipmap/nav_found"
+                    android:title="@string/nav_found"/>
+                <item android:id="@+id/nav_item_concern"
+                    android:icon="@mipmap/nav_concern"
+                    android:title="@string/nav_concern"/>
+            </menu>
+        </item>-->
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="none">
+        <item android:id="@+id/nav_item_night_mode"
+            android:icon="@mipmap/nav_night_mode"
+            android:title="@string/nav_night_mode" />
+
+        <item android:id="@+id/nav_item_setting"
+            android:icon="@mipmap/nav_setting"
+            android:title="@string/nav_setting" />
+
+        <item android:id="@+id/nav_item_about"
+            android:icon="@mipmap/nav_about"
+            android:title="@string/nav_about" />
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="none">
+        <item android:id="@+id/nav_item_exit_app"
+            android:icon="@mipmap/nav_exit_app"
+            android:title="@string/nav_exit_app" />
+    </group>
+
+
+</menu>
